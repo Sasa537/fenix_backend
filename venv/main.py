@@ -3,7 +3,6 @@ import requests
 from flask_restful import Api,Resource
 from Models import catalog_model,podcatalog_model
 
-
 app = Flask(__name__)
 api = Api(app)
 
