@@ -8,10 +8,6 @@ class Category(Resource):
         catalog = Catalog.query.all()
         return {"Category": list(x.json() for x in catalog)}
 
-    def get(self, id):
-        catalog = Catalog.query.filter_by(id=id).first()
-        return catalog.json()
-
     def post(self):
         data = request.get_json()
         new_category = Catalog(data['name'])
