@@ -1,5 +1,4 @@
 from flask_sqlalchemy import SQLAlchemy
-
 db_catalog = SQLAlchemy()
 
 class Catalog(db_catalog.Model):
